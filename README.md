@@ -1,30 +1,51 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# game-hub
 
-Currently, two official plugins are available:
+# Rodel's Game Hub
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## Expanding the ESLint configuration
+Rodel's Game Hub App is a web application built with React, Vite, Chakra UI, and TypeScript that allows users to browse and filter games based on various criteria such as platform, search term, genres, and relevance. This app provides a seamless and interactive user experience to explore a wide range of games.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **Platform Filter**: Filter games based on different platforms such as PC, PlayStation, Xbox, etc.
+- **Search**: Search for games by title or keywords.
+- **Genres**: Browse games by different genres like Action, Adventure, Puzzle, etc.
+- **Relevance**: Sort games based on relevance, popularity, and other criteria.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- Node.js (v14.x or later)
+- npm (v6.x or later) or yarn (v1.x or later)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/rdlrys/game-hub.git
+   cd game-hub
+   ```
+
+2. Install the dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+### Running the App
+
+To start the development server, run:
+
+```bash
+npm run dev
+# or
+yarn dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
